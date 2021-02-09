@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 require('dotenv').config()
-
-const MONGOURI = process.env.MONGOURI; //running on localhost
+/running on localhost
 
 const startMongoServer = async () => {
     try {
