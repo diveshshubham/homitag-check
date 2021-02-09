@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require('dotenv').config()
-
+MONGOURI = process.env.MONGOURI;
 const startMongoServer = async () => {
     try {
             await mongoose.connect(MONGOURI, {
