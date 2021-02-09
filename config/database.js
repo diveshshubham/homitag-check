@@ -6,7 +6,7 @@ const MONGOURI = process.env.MONGOURI; //running on localhost
 const startMongoServer = async () => {
     try {
             await mongoose.connect(MONGOURI, {
-                useNewUrlParser: true,useUnifiedTopology: true //this will parse the mongoDB connection string
+              useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false //this will parse the mongoDB connection string
             });
             console.log("connected to mongo db");
              } 
