@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 require('dotenv').config()
-/running on localhost
 
 const startMongoServer = async () => {
     try {
